@@ -1,0 +1,134 @@
+---
+title: "My Developer Setup"
+description: "A comprehensive look at my development environment, tools, and productivity hacks"
+date: "2023-03-10"
+---
+
+# My Developer Setup
+
+*Published on March 10, 2023*
+
+![Developer Workspace](/images/profile.jpg)
+
+Creating an efficient development environment can significantly boost your productivity and make coding more enjoyable. In this post, I'll share my complete setup, from hardware to software tools and productivity hacks.
+
+## Hardware
+
+### Computer
+
+I currently use a MacBook Pro with the following specifications:
+- Apple M1 Pro chip
+- 16GB unified memory
+- 512GB SSD storage
+- 14-inch Liquid Retina XDR display
+
+This machine handles all my development needs without breaking a sweat, from running multiple Docker containers to code compilation.
+
+### Peripherals
+
+- **Monitor**: 27" 4K LG UltraFine display
+- **Keyboard**: Keychron K2 mechanical keyboard with brown switches
+- **Mouse**: Logitech MX Master 3
+- **Audio**: Sony WH-1000XM4 noise-canceling headphones
+- **Webcam**: Logitech C920 HD Pro
+
+## Software
+
+### Development Environment
+
+- **Terminal**: iTerm2 with Oh My Zsh
+- **Shell**: Zsh with Powerlevel10k theme
+- **Code Editor**: VS Code as my primary editor
+- **Alternative Editor**: Neovim for quick edits
+- **Font**: JetBrains Mono with ligatures
+
+### VS Code Extensions
+
+My essential VS Code extensions include:
+
+1. **ESLint & Prettier**: For code linting and formatting
+2. **GitHub Copilot**: AI pair programming assistant
+3. **GitLens**: Enhanced Git capabilities
+4. **Docker**: Docker container management
+5. **Thunder Client**: API testing tool
+
+### Terminal Setup
+
+My terminal productivity is enhanced with:
+
+```bash
+# Common aliases in my .zshrc
+alias gs="git status"
+alias gc="git commit -m"
+alias gp="git push"
+alias ll="ls -la"
+alias dc="docker-compose"
+```
+
+## Productivity Tools
+
+### Task Management
+
+- **Notion**: For project planning and note-taking
+- **Todoist**: Daily task management
+- **Calendly**: Scheduling meetings efficiently
+
+### Communication
+
+- **Slack**: Team communication
+- **Discord**: Developer communities
+- **Zoom**: Video conferencing
+
+## Development Workflow
+
+### Local Development
+
+I use Docker for consistent development environments:
+
+```yaml
+# Example docker-compose.yml
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: app
+```
+
+### Git Workflow
+
+I follow a structured Git workflow:
+
+1. Create feature branches from main
+2. Make frequent, small commits
+3. Use pull requests for code review
+4. Squash and merge when complete
+
+## Productivity Hacks
+
+1. **Pomodoro Technique**: 25 minutes of focused work, followed by a 5-minute break
+2. **Time Blocking**: Schedule coding blocks on my calendar
+3. **Documentation First**: Write documentation before implementation
+4. **Custom Snippets**: Maintain a library of code snippets
+
+## Conclusion
+
+My development setup continues to evolve as I discover new tools and techniques. Finding the right balance between familiar tools and exploring new ones has been key to improving my productivity.
+
+What does your development setup look like? I'd love to hear about your favorite tools and productivity hacks in the comments!
+
+## Resources
+
+- [My dotfiles on GitHub](https://github.com/yourusername/dotfiles)
+- [VS Code Setup Guide](https://code.visualstudio.com/docs/getstarted/settings)
+- [Oh My Zsh Configuration](https://ohmyz.sh/) 

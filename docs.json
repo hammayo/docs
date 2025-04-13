@@ -11,6 +11,27 @@
   "navigation": {
     "tabs": [
       {
+        "tab": "Blog",
+        "groups": [
+          {
+            "group": "Main",
+            "pages": [
+              "main",
+              "about",
+              "contact"
+            ]
+          },
+          {
+            "group": "Posts",
+            "pages": [
+              "blogs/nextjs-development",
+              "blogs/typescript-guide",
+              "blogs/developer-setup"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "Guides",
         "groups": [
           {
@@ -71,6 +92,31 @@
           "anchor": "Blog",
           "href": "https://mintlify.com/blog",
           "icon": "newspaper"
+        },
+        {
+          "anchor": "Home",
+          "href": "https://example.com/",
+          "icon": "home"
+        },
+        {
+          "anchor": "About",
+          "href": "https://example.com/about",
+          "icon": "user"
+        },
+        {
+          "anchor": "Contact",
+          "href": "https://example.com/contact",
+          "icon": "envelope"
+        },
+        {
+          "anchor": "Twitter",
+          "href": "https://twitter.com/yourusername",
+          "icon": "twitter"
+        },
+        {
+          "anchor": "GitHub",
+          "href": "https://github.com/yourusername",
+          "icon": "github"
         }
       ]
     }
@@ -81,6 +127,14 @@
   },
   "navbar": {
     "links": [
+      {
+        "label": "About",
+        "href": "https://example.com/about"
+      },
+      {
+        "label": "Contact",
+        "href": "https://example.com/contact"
+      },
       {
         "label": "Support",
         "href": "mailto:hi@mintlify.com"
@@ -95,8 +149,8 @@
   "footer": {
     "socials": {
       "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/yourusername",
+      "linkedin": "https://linkedin.com/in/yourusername"
     }
   }
 }
